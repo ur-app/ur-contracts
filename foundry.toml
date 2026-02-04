@@ -1,0 +1,39 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+solc = "0.8.20"
+evm_version = "paris"
+optimizer = true
+optimizer_runs = 1
+
+ffi = true
+fs_permissions = [
+    { access = 'read-write', path = './snapshots/' },
+    { access = 'read-write', path = './deployments/' },
+    { access = 'read', path = './deploy-config/' },
+    { access = 'read', path = './broadcast/' },
+    { access = 'read', path = './script/libraries/' },
+]
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
+
+remappings = [
+    '@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/',
+    '@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/',
+    'openzeppelin/contracts/=node_modules/@openzeppelin/contracts/',
+    'openzeppelin/contracts-upgradeable/=node_modules/@openzeppelin/contracts-upgradeable/',
+    'openzeppelin-4.7.3/contracts-upgradeable/=node_modules/@openzeppelin/contracts-upgradeable-4.7.3/',
+    '@uniswap/v3-core/=lib/v3-core',
+    '@uniswap/v3-periphery/=lib/v3-periphery',
+    '@layerzerolabs/=node_modules/@layerzerolabs/',
+    '@safe-contracts/contracts/=lib/mantle-cdk/lib/safe-contracts/contracts/',
+    'forge-std/=lib/forge-std/src/',
+    'mantle-cdk/=lib/mantle-cdk/',
+]
+
+[fmt]
+# These are all the `forge fmt` defaults.
+line_length = 160
+
+[rpc_endpoints]
+mantle = "https://rpc.mantle.xyz"

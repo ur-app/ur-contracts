@@ -1,0 +1,5 @@
+{
+  "Fiat24CryptoDepositProxy": "0xd08B421A33F9b09A59E2ebf72afEF2365ce5b083",
+  "Fiat24CryptoDeposit": "0x1934E404929b7279e473e16e4242c32a9E145da7",
+  "TimelockController": "0xaa8D118cA85c55a3b88c24fc6BcfCb764239bb12"
+}

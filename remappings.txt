@@ -1,0 +1,12 @@
+@uniswap/v3-core/=lib/v3-core/
+@uniswap/v3-periphery/=lib/v3-periphery/
+@uniswap/swap-router-contracts/=lib/swap-router-contracts/
+@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/
+@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/
+openzeppelin/contracts/=node_modules/@openzeppelin/contracts/
+openzeppelin/contracts-upgradeable/=node_modules/@openzeppelin/contracts-upgradeable/
+openzeppelin-4.7.3/contracts-upgradeable/=node_modules/@openzeppelin/contracts-upgradeable-4.7.3/
+@safe-contracts/contracts/=lib/mantle-cdk/lib/safe-contracts/contracts/
+forge-std/=lib/forge-std/src/
+mantle-cdk/=lib/mantle-cdk/
+solidity-bytes-utils/=node_modules/solidity-bytes-utils/
